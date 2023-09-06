@@ -1,0 +1,65 @@
+package seguros;
+
+import asegurados.Cliente;
+import asegurados.Persona;
+
+public class SeguroBienesInmuebles extends Poliza {
+	private static int valorXmetroCuadrado=40;
+	private static int gastoAdministrativo=1400;
+	private static double porcentajeSumaAsegurada=0.02;
+	private double cantMetros;
+	
+	public SeguroBienesInmuebles(double metrosCuadrados,Cliente cliente) {
+		super();
+		setCantMetros(metrosCuadrados);
+		setCliente(cliente);
+		setSumaAsegurada(calcularValorTotal(metrosCuadrados));
+		setCuotaMensual(calcularCuotaMensual());
+	}
+	public SeguroBienesInmuebles(double metrosCuadrados,Cliente cliente,Persona beneficiario) {
+		this(metrosCuadrados,cliente);
+		setBeneficiario(beneficiario);
+	}
+	public double getCantMetros() {
+		return cantMetros;
+	}
+	
+	public double calcularValorTotal(double metros) {
+		return metros*valorXmetroCuadrado;
+	}
+	
+	private void setCantMetros(double metros) {
+		this.cantMetros=metros;
+	}
+	
+	public double calcularCuotaMensual() {
+		return (getSumaAsegurada()*porcentajeSumaAsegurada)+gastoAdministrativo;
+	}
+	
+	public static int getValorXmetroCuadrado() {
+		return valorXmetroCuadrado;
+	}
+
+	public static void setValorXmetroCuadrado(int valorXmetroCuadrado) {
+		SeguroBienesInmuebles.valorXmetroCuadrado = valorXmetroCuadrado;
+	}
+
+	public static int getGastoAdministrativo() {
+		return gastoAdministrativo;
+	}
+
+	public static void setGastoAdministrativo(int gastoAdministrativo) {
+		SeguroBienesInmuebles.gastoAdministrativo = gastoAdministrativo;
+	}
+
+	public static double getPorcentajeSumaAsegurada() {
+		return porcentajeSumaAsegurada;
+	}
+
+	public static void setPorcentajeSumaAsegurada(int porcentajeSumaAsegurada) {
+		SeguroBienesInmuebles.porcentajeSumaAsegurada = porcentajeSumaAsegurada;
+	}
+	
+	
+}
+	

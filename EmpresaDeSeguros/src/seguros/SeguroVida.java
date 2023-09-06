@@ -1,0 +1,56 @@
+package seguros;
+
+import asegurados.Cliente;
+import asegurados.Persona;
+
+public class SeguroVida extends Poliza {
+	private static double porcentajeSueldoDeclarado=0.01;
+	private static double valorFijo=1500;
+	private double sueldoDeclarado;
+	
+	public SeguroVida(double sueldo, Cliente cliente) {
+		super();
+		setCliente(cliente);
+		setSumaAsegurada(20*sueldo);
+		setSueldoDeclarado(sueldo);
+		setCuotaMensual(calcularCuotaMensual());
+	}
+	public SeguroVida(double sueldo, Cliente cliente,Persona beneficiario) {
+		this(sueldo,cliente);
+		setBeneficiario(beneficiario);
+	}
+	
+	public double calcularCuotaMensual() {
+		double totalCuotaMensual=porcentajeSueldoDeclarado*getSueldoDeclarado();
+		if (getCliente().getEdad()>60) {
+			return totalCuotaMensual+valorFijo;
+		}
+		return totalCuotaMensual;
+	}
+
+	public static double getPorcentajeSueldoDeclarado() {
+		return porcentajeSueldoDeclarado;
+	}
+
+	public static void setPorcentajeSueldoDeclarado(double porcentajeSueldoDeclarado) {
+		SeguroVida.porcentajeSueldoDeclarado = porcentajeSueldoDeclarado;
+	}
+
+	public static double getValorFijo() {
+		return valorFijo;
+	}
+
+	public static void setValorFijo(double valorFijo) {
+		SeguroVida.valorFijo = valorFijo;
+	}
+
+	public double getSueldoDeclarado() {
+		return sueldoDeclarado;
+	}
+
+	public void setSueldoDeclarado(double sueldoDeclarado) {
+		this.sueldoDeclarado = sueldoDeclarado;
+	}
+	
+	
+}

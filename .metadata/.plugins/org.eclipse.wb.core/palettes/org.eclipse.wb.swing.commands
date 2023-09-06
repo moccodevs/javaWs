@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="category_1693085620572"
+		name="Custom"
+		description="Container for custom components"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="custom_1693085620571"
+		name="Button"
+		description="Creates java.awt.Button component."
+		visible="true"
+		class="java.awt.Button"
+		category="category_1693085620572"/>
+</commands>

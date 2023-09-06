@@ -1,0 +1,30 @@
+package gui;
+
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class Dibujo1 extends JPanel {
+	int x1;
+	int x2;
+	int y1;
+	int y2;
+	Graphics g;
+    @Override
+    protected void paintComponent(Graphics g) {
+        
+        
+        // Realiza aquí tus operaciones de dibujo
+        
+        
+        
+    }
+    
+    public void generarLinea(int x1,int y1,int x2,int y2) {
+    super.paintComponent(g);
+       this.x1=x1;
+       this.x2=x2;
+       this.y1=y1;
+       this.y2=y2;
+       g.drawLine(this.x1, this.y1,this.x2,this.y2);
+    }
+}

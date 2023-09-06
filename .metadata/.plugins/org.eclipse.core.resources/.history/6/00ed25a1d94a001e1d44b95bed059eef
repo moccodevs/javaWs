@@ -1,0 +1,20 @@
+package estructura_personas;
+
+public class Cliente {
+	private static int contador;
+	private int cod_cliente;
+	
+	public Cliente() {
+		cod_cliente=contador;
+		contador++;
+	}
+	
+	public int getCod_cliente() {
+		return cod_cliente;
+	}
+	
+	public int getContador() {
+		return contador;
+	}
+	
+}

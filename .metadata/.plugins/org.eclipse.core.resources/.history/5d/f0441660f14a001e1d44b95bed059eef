@@ -1,0 +1,32 @@
+package seguros;
+
+import estructura_personas.Cliente;
+import estructura_personas.Persona;
+
+public class SeguroVehiculo extends SeguroBienesMuebles {
+	private static double porcentajeDescuentoPorAnio=0.02;
+	private int modelo;
+	
+	public SeguroVehiculo(int modelo,Cliente cliente,Persona beneficiario) {
+		super();
+		setModelo(modelo);
+	}
+
+	public static double getPorcentajeDescuentoPorAnio() {
+		return porcentajeDescuentoPorAnio;
+	}
+
+	public static void setPorcentajeDescuentoPorAnio(double porcentajeDescuentoPorAnio) {
+		SeguroVehiculo.porcentajeDescuentoPorAnio = porcentajeDescuentoPorAnio;
+	}
+
+	public int getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(int modelo) {
+		this.modelo = modelo;
+	}
+	
+	
+}

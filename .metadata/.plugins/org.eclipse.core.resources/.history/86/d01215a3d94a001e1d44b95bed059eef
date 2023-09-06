@@ -1,0 +1,18 @@
+package seguros;
+
+public class SeguroVida extends Poliza {
+	private static double porcentajeSueldoDeclarado=0.01;
+	private static double valorFijo;
+	private double sueldoDeclarado;
+	
+	public SeguroVida(double sueldo) {
+		setSumaAsegurada(20*sueldo);
+		setCuotaMensual()
+	}
+	
+	public double calcularCuotaMensual() {
+		if ((getCliente().getEdad())>60) {
+			
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package asegurados;
+
+public class Vehiculo {
+	private String marca;
+	private int modelo;
+	
+}

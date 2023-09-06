@@ -1,0 +1,21 @@
+package test;
+
+import asegurados.Cliente;
+import asegurados.Vehiculo;
+import seguros.SeguroBienesInmuebles;
+import seguros.SeguroVehiculo;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente cliente1= new Cliente(54);
+		Vehiculo auto1= new Vehiculo(1994,1000500,"Ford");
+		
+		SeguroBienesInmuebles seguroBI1=new SeguroBienesInmuebles(50,cliente1);
+		SeguroVehiculo seguroV1= new SeguroVehiculo(cliente1,auto1);
+		System.out.println("seguro Bienes inmuebles: " + seguroBI1.getCuotaMensual());
+		System.out.println("nro poliza: "+ seguroBI1.getNroPoliza());
+		
+		System.out.println("seguro Vehiculo: " + seguroV1.getCuotaMensual());
+		System.out.println("nombre cliente:"+seguroV1.getCliente().toString());
+	}
+}

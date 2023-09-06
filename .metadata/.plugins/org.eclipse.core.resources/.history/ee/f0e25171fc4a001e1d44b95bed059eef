@@ -1,0 +1,13 @@
+package test;
+
+import estructura_personas.Cliente;
+import seguros.SeguroBienesInmuebles;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente cliente1= new Cliente(54);
+		SeguroBienesInmuebles seguroBI1=new SeguroBienesInmuebles(50,cliente1);
+		System.out.println("seguro Bienes inmuebles: " + seguroBI1.getCuotaMensual());
+		System.out.println("nro poliza: "+ seguroBI1.getNroPoliza());
+	}
+}

@@ -1,0 +1,7 @@
+package estructura_personas;
+
+public class Beneficiario extends Persona {
+	public Beneficiario(int edad) {
+		super(edad);
+	}
+}

@@ -1,0 +1,45 @@
+package test;
+
+import asegurados.Beneficiario;
+import asegurados.Cliente;
+import asegurados.Vehiculo;
+import seguros.Poliza;
+import seguros.SeguroBienesInmuebles;
+import seguros.SeguroBienesMuebles;
+import seguros.SeguroVehiculo;
+import seguros.SeguroVida;
+
+public class Main {
+	public static void main(String[] args) {
+		Cliente cliente1= new Cliente(54,41205040,"Martin","Campos");
+		Cliente cliente2= new Cliente(54,35405620,"Sergio","Martinez");
+		Cliente cliente3= new Cliente(54,37546000,"Andres","Gomez");
+		Cliente cliente4= new Cliente(54,34568447,"Carlos","Pasos");
+		
+		Beneficiario beneficiario1 = new Beneficiario(31, 5615656,"Julian","San Pablo");
+		
+		Vehiculo auto1= new Vehiculo(1994,1000500,"Ford");
+		
+		SeguroBienesInmuebles seguroBI1=new SeguroBienesInmuebles(50,cliente1,beneficiario1);
+		SeguroVehiculo seguroVehiculo1= new SeguroVehiculo(cliente1,auto1);
+		SeguroBienesMuebles seguroBM1=new SeguroBienesMuebles(40, cliente3);
+		SeguroVida seguroVida1 = new SeguroVida(60, cliente4);
+		/*
+		System.out.println("seguro Bienes inmuebles: " + seguroBI1.getCuotaMensual());
+		System.out.println("nro poliza: "+ seguroBI1.getNroPoliza());
+		
+		System.out.println("seguro Vehiculo: " + seguroVehiculo1.getCuotaMensual());
+		System.out.println(seguroBI1.getCliente().toString());
+		System.out.println(seguroBI1.toString());
+		*/
+		Poliza polizas[]=new Poliza[20];
+		polizas[0]=seguroBI1;
+		polizas[1]=seguroVehiculo1;
+		polizas[2]=seguroVida1;
+		polizas[3]=seguroBM1;
+		
+		for (int i=0 ; i<Poliza.getContador();i++) {
+			System.out.println(polizas[i].toString());
+		}
+	}
+}

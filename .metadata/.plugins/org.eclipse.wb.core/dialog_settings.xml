@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.wb.internal.core.editor.actions.assistant.LayoutAssistantWindow">
+		<item key="x" value="916"/>
+		<item key="y" value="469"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.util.ExposeComponentSupport$ExposeDialog">
+		<item key="x" value="697"/>
+		<item key="y" value="384"/>
+		<item key="width" value="525"/>
+		<item key="height" value="281"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.util.RenameConvertSupport$RenameDialog">
+		<item key="x" value="697"/>
+		<item key="y" value="384"/>
+		<item key="width" value="525"/>
+		<item key="height" value="281"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.util.factory.FactoryCreateAction$FactoryCreateDialog">
+		<item key="x" value="486"/>
+		<item key="y" value="135"/>
+		<item key="width" value="947"/>
+		<item key="height" value="779"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.PaletteManagerDialog">
+		<item key="x" value="697"/>
+		<item key="y" value="267"/>
+		<item key="width" value="525"/>
+		<item key="height" value="516"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.model.property.editor.string.StringPropertyDialog">
+		<item key="x" value="695"/>
+		<item key="y" value="352"/>
+		<item key="width" value="530"/>
+		<item key="height" value="346"/>
+	</section>
+</section>

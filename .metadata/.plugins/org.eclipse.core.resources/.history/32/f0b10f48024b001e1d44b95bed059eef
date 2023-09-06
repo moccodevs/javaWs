@@ -1,0 +1,39 @@
+package asegurados;
+
+public class Cliente extends Persona {
+	private static int contador;
+	private int codCliente;
+	
+	public Cliente(int edad) {
+		super(edad);
+		codCliente=contador;
+		contador++;
+	}
+	public Cliente(int edad, String nombre, String apellido) {
+		this(edad);
+		setNombre(nombre);
+		setApellido(apellido);
+	}
+	public boolean equals(Persona cliente2) {
+		Cliente b= (Cliente)cliente2;
+		if (b instanceof Cliente) {
+			return this.getNroDocumento()==b.getNroDocumento();
+		}
+		return false;
+	}
+	@Override
+	public String toString() {
+		
+		return "N° Cliente: "+codCliente+". Nombre y Apellido: "+getApellido()+", "+getNombre();
+		
+	}
+	
+	public int getCodCliente() {
+		return codCliente;
+	}
+	
+	public int getContador() {
+		return contador;
+	}
+	
+}

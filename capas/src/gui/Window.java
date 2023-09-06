@@ -1,0 +1,97 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import java.awt.Button;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Color;
+import java.awt.Font;
+
+
+public class Window extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField txt1;
+	private JTextField txt2;
+	private JTextField txt3;
+	private JTextField txt4;
+
+
+	/**
+	 * Create the frame.
+	 */
+	public Window() {
+		setBackground(new Color(0, 0, 0));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 546, 321);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(127, 127, 127));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+
+		
+		JLabel lblNewLabel = new JLabel("Apreta aca gato");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNewLabel.setForeground(new Color(255, 255, 255));
+		lblNewLabel.setBounds(331, 156, 230, 30);
+		contentPane.add(lblNewLabel);
+		
+		txt1 = new JTextField();
+		txt1.setBounds(48, 85, 79, 20);
+		contentPane.add(txt1);
+		txt1.setColumns(10);
+		
+		Button btn = new Button("copy");
+		btn.setBackground(new Color(64, 128, 128));
+		btn.setActionCommand("btn");
+
+		btn.setBounds(331, 192, 117, 58);
+		contentPane.add(btn);
+		
+		txt2 = new JTextField();
+		txt2.setColumns(10);
+		txt2.setBounds(139, 85, 79, 20);
+		contentPane.add(txt2);
+		
+		txt3 = new JTextField();
+		txt3.setColumns(10);
+		txt3.setBounds(228, 85, 79, 20);
+		contentPane.add(txt3);
+		
+		txt4 = new JTextField();
+		txt4.setColumns(10);
+		txt4.setBounds(316, 85, 79, 20);
+		contentPane.add(txt4);
+		
+		JFrame frame = new JFrame("Ejemplo de Dibujo");
+
+		btn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int x1 = Integer.parseInt(txt1.getText());
+				int x2 = Integer.parseInt(txt2.getText());
+				int y1 = Integer.parseInt(txt3.getText());
+				int y2 = Integer.parseInt(txt4.getText());
+				
+				Dibujo1 linea = new Dibujo1();
+				
+				
+				linea.generarLinea(x1, y1, x2, y2);
+				
+				frame.getContentPane().add(linea);
+				frame.setSize(400, 500);
+				frame.setVisible(true);
+		        
+			}
+		});
+	}
+}

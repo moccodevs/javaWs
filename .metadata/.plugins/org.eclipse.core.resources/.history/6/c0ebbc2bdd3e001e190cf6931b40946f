@@ -1,0 +1,17 @@
+package gui;
+
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class Dibujo1 extends JPanel {
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        
+        // Realiza aquí tus operaciones de dibujo
+        g.drawLine(502, 50, 200, 200);
+        g.drawRect(100, 100, 150, 100);
+        g.drawOval(250, 50, 100, 100);
+    }
+}

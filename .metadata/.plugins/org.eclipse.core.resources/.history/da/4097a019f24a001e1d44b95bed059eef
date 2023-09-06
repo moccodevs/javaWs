@@ -1,0 +1,22 @@
+package estructura_personas;
+
+public class Cliente extends Persona {
+	private static int contador;
+	private int cod_cliente;
+	
+	@Override
+	public Cliente(int edad) {
+		setEdad(edad);
+		cod_cliente=contador;
+		contador++;
+	}
+	
+	public int getCod_cliente() {
+		return cod_cliente;
+	}
+	
+	public int getContador() {
+		return contador;
+	}
+	
+}

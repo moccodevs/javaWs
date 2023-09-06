@@ -1,0 +1,57 @@
+package seguros;
+
+import estructura_personas.Cliente;
+import estructura_personas.Persona;
+
+public class SeguroBienesInmuebles extends Poliza {
+	private static int valorXmetroCuadrado;
+	private static int gastoAdministrativo;
+	private static int porcentajeSumaAsegurada;
+	private double cantMetros;
+	
+	public SeguroBienesInmuebles(double metrosCuadrados,Cliente cliente,Persona beneficiario) {
+		super();
+		setCliente(cliente);
+		setBeneficiario(beneficiario);
+		setSumaAsegurada(metrosCuadrados*valorXmetroCuadrado);
+		setCuotaMensual(calcularCuotaMensual());
+	}
+	
+	public double getCantMetros() {
+		return cantMetros;
+	}
+	
+	public void setCantMetros(double metros) {
+		this.cantMetros=metros;
+	}
+	public double calcularCuotaMensual() {
+		
+		return getSumaAsegurada()*gastoAdministrativo;
+	}
+	public static int getValorXmetroCuadrado() {
+		return valorXmetroCuadrado;
+	}
+
+	public static void setValorXmetroCuadrado(int valorXmetroCuadrado) {
+		SeguroBienesInmuebles.valorXmetroCuadrado = valorXmetroCuadrado;
+	}
+
+	public static int getGastoAdministrativo() {
+		return gastoAdministrativo;
+	}
+
+	public static void setGastoAdministrativo(int gastoAdministrativo) {
+		SeguroBienesInmuebles.gastoAdministrativo = gastoAdministrativo;
+	}
+
+	public static int getPorcentajeSumaAsegurada() {
+		return porcentajeSumaAsegurada;
+	}
+
+	public static void setPorcentajeSumaAsegurada(int porcentajeSumaAsegurada) {
+		SeguroBienesInmuebles.porcentajeSumaAsegurada = porcentajeSumaAsegurada;
+	}
+	
+	
+}
+	

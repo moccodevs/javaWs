@@ -1,0 +1,52 @@
+package seguros;
+import java.time.LocalDate;
+
+import estructura_personas.Cliente;
+import estructura_personas.Persona;
+
+public class SeguroVehiculo extends SeguroBienesMuebles {
+	private static double porcentajeDescuentoPorAnio=0.02;
+	private static int anioActual= LocalDate.now().getYear();
+	private int modelo;
+	
+	public SeguroVehiculo(double valorAuto,int modelo,Cliente cliente) {
+		super();
+		setCliente(cliente);
+		setValorProducto(valorAuto);
+		setModelo(modelo);
+		setCuotaMensual(calcularMontoTotal());
+	}
+	public SeguroVehiculo(double valorAuto,int modelo,Cliente cliente,Persona beneficiario) {
+		this(valorAuto,modelo,cliente);
+		setBeneficiario(beneficiario);
+	}
+	
+	
+	public double calcularMontoTotal() {
+		int aniosAntiguedad=anioActual-modelo;
+		double porcentajeTotal=porcentajeDescuentoPorAnio*aniosAntiguedad;
+		return getValorProducto()-(getValorProducto()*porcentajeTotal);
+	}
+	
+	public static double getPorcentajeDescuentoPorAnio() {
+		return porcentajeDescuentoPorAnio;
+	}
+
+	public static void setPorcentajeDescuentoPorAnio(double porcentajeDescuentoPorAnio) {
+		SeguroVehiculo.porcentajeDescuentoPorAnio = porcentajeDescuentoPorAnio;
+	}
+
+	public int getModelo() {
+		return modelo;
+	}
+	public void setValorAuto(double valorAuto) {
+		setValorProducto(valorAuto);
+		setCuotaMensual(calcularMontoTotal());
+	}
+	public void setModelo(int modelo) {
+		this.modelo = modelo;
+		setCuotaMensual(calcularMontoTotal());
+	}
+	
+	
+}
