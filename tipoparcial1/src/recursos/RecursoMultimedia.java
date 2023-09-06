@@ -4,7 +4,7 @@ public abstract class RecursoMultimedia {
 	public static int generadorCodigo=10000;
 	public static double coheficientePorcentajeGanancia= 0.3;
 	private int codigoRecurso;
-	private int nombre;
+	private String nombre;
 	private double costoAdquisicion;
 	
 	public RecursoMultimedia() {
@@ -12,7 +12,7 @@ public abstract class RecursoMultimedia {
 		codigoRecurso=generadorCodigo;
 	}
 	
-	public double calcularPrecioVenta() {
+	public double getPrecioVenta() {
 		return (costoAdquisicion*coheficientePorcentajeGanancia)+costoAdquisicion;
 	}
 
@@ -24,11 +24,11 @@ public abstract class RecursoMultimedia {
 		RecursoMultimedia.coheficientePorcentajeGanancia = coheficientePorcentajeGanancia;
 	}
 
-	public int getNombre() {
+	public String getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(int nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 

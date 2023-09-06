@@ -23,4 +23,8 @@
     <fullyQualifiedTypeName name="seguros.Poliza"/>
     <fullyQualifiedTypeName name="seguros.SeguroBienesMuebles"/>
     <fullyQualifiedTypeName name="seguros.SeguroVida"/>
+    <fullyQualifiedTypeName name="recursos.SistemaOperativoCompatible"/>
+    <fullyQualifiedTypeName name="recursos.RecursoMultimedia"/>
+    <fullyQualifiedTypeName name="data_abstraction.TipoDuracion"/>
+    <fullyQualifiedTypeName name="data_abstraction.TipoNombre"/>
 </qualifiedTypeNameHistroy>
