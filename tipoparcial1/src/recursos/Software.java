@@ -6,9 +6,8 @@ public class Software extends RecursoMultimedia {
 	private String fabricante;
 	private SistemaOperativoCompatible[] sistemaOperativoCompatible;
 	
-	public Software(String fabricante) {
-		super();
-		this.fabricante=fabricante;
+	public Software(String nombre) {
+		super(nombre);
 	}
 	public String getFabricante() {
 		return fabricante;

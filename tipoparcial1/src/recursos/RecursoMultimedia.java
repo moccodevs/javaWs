@@ -8,10 +8,13 @@ public abstract class RecursoMultimedia {
 	private double costoAdquisicion;
 	
 	public RecursoMultimedia() {
-		generadorCodigo++;
 		codigoRecurso=generadorCodigo;
+		generadorCodigo++;
 	}
-	
+	public RecursoMultimedia(String nombre) {
+		this();
+		this.nombre=nombre;
+	}
 	public double getPrecioVenta() {
 		return (costoAdquisicion*coheficientePorcentajeGanancia)+costoAdquisicion;
 	}
@@ -40,9 +43,6 @@ public abstract class RecursoMultimedia {
 		this.costoAdquisicion = costoAdquisicion;
 	}
 
-	public static int getGeneradorCodigo() {
-		return generadorCodigo;
-	}
 	public int getCodigoRecurso() {
 		return codigoRecurso;
 	}

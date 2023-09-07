@@ -3,13 +3,17 @@ package recursos;
 import data_abstraction.TipoNombreCompleto;
 import data_abstraction.TipoDuracion;
 
-public class Cancion extends AlbumMusica {
+public class Cancion extends RecursoMultimedia {
 	static int cantidadTotalCanciones=0;
 	private TipoNombreCompleto artista;
 	private TipoDuracion duracion;
 	
 	public Cancion(String nombre) {
 		super(nombre);
+	}
+	public Cancion(String nombre,double costo) {
+		this(nombre);
+		this.setCostoAdquisicion(costo);
 		cantidadTotalCanciones++;
 	}
 	
