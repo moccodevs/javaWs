@@ -22,18 +22,18 @@ public class Test {
 		RecursoMultimedia[] recursos = new RecursoMultimedia[2];
 		RecursoMultimedia[] recursos2 = new RecursoMultimedia[1];
 		
-		recursos[0] = new Cancion("Morocha",1599) ;
+		recursos[0] = new Cancion("Cancion: Shoot to thrill",1599) ;
 		
-		recursos[1] = new Software("Sistema operativo Windows");
+		recursos[1] = new Software("Sistema operativo: Windows");
 		recursos[1].setCostoAdquisicion(1500);
 		
-		recursos2[0] = new Software("Juego - GTA V") ;
+		recursos2[0] = new Software("Juego: GTA V") ;
 		recursos2[0].setCostoAdquisicion(4999);
 		
 		
 		
 		/*
-		canciones[0] = new Cancion("Morocha");
+		canciones[0] = new Cancion("Shoot to thrill");
 		canciones[1] = new Cancion("Capo");
 		canciones[0].setCostoAdquisicion(150);
 		canciones[1].setCostoAdquisicion(183);
