@@ -17,12 +17,16 @@ public class Test {
 		Cliente cliente1 = new Cliente("Martin","Gomez");
 		Cliente cliente2 = new Cliente("Carlos","Pintos");
 		
-		
+		Cancion cancion1 = new Cancion("capo");
+		Cancion[] canciones = new Cancion[1];
+		canciones[0]= cancion1;
+		Album album1 = new Album ("capos");
+		album1.setCanciones(canciones);
 		
 		RecursoMultimedia[] recursos = new RecursoMultimedia[3];
 		RecursoMultimedia[] recursos2 = new RecursoMultimedia[1];
 		
-		recursos[0] = new Cancion("Cancion: Shoot to thrill",1599) ;
+		recursos[0] = album1 ;
 		
 		recursos[1] = new Software("Sistema operativo: Windows");
 		recursos[1].setCostoAdquisicion(1500);
