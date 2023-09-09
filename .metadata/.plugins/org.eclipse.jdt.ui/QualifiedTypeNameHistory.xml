@@ -24,7 +24,14 @@
     <fullyQualifiedTypeName name="seguros.SeguroBienesMuebles"/>
     <fullyQualifiedTypeName name="seguros.SeguroVida"/>
     <fullyQualifiedTypeName name="recursos.SistemaOperativoCompatible"/>
-    <fullyQualifiedTypeName name="recursos.RecursoMultimedia"/>
     <fullyQualifiedTypeName name="data_abstraction.TipoDuracion"/>
     <fullyQualifiedTypeName name="data_abstraction.TipoNombre"/>
+    <fullyQualifiedTypeName name="facturacion.EmpresaDeSoftware"/>
+    <fullyQualifiedTypeName name="facturacion.Cliente"/>
+    <fullyQualifiedTypeName name="recursos.Cancion"/>
+    <fullyQualifiedTypeName name="recursos.Serie"/>
+    <fullyQualifiedTypeName name="recursos.Album"/>
+    <fullyQualifiedTypeName name="facturacion.Factura"/>
+    <fullyQualifiedTypeName name="recursos.Software"/>
+    <fullyQualifiedTypeName name="recursos.RecursoMultimedia"/>
 </qualifiedTypeNameHistroy>
