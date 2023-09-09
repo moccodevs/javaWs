@@ -19,14 +19,14 @@ public class Test {
 		
 		
 		
-		RecursoMultimedia[] recursos = new RecursoMultimedia[2];
+		RecursoMultimedia[] recursos = new RecursoMultimedia[3];
 		RecursoMultimedia[] recursos2 = new RecursoMultimedia[1];
 		
 		recursos[0] = new Cancion("Cancion: Shoot to thrill",1599) ;
 		
 		recursos[1] = new Software("Sistema operativo: Windows");
 		recursos[1].setCostoAdquisicion(1500);
-		
+		recursos[2] = new Cancion("Cancion: Highway to hell",1599) ;
 		recursos2[0] = new Software("Juego: GTA V") ;
 		recursos2[0].setCostoAdquisicion(4999);
 		

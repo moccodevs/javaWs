@@ -37,8 +37,13 @@ public class Factura {
 	
 	public double getImporteTotal() {
 		double total = 0;
+		int cantidad= 0;
 		for (RecursoMultimedia recursoMultimedia : recursosMultimedia) {
 			total+=recursoMultimedia.getPrecioVenta();
+			cantidad++;
+		}
+		if (cantidad > 3) {
+			total -= (total*0.05);
 		}
 		return total;
 	}
