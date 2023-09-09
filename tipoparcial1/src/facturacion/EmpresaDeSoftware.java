@@ -13,7 +13,7 @@ public class EmpresaDeSoftware {
 	
 	public void verDetalleFacturaciones() {
 		double total=0;
-		System.out.println("Todas las facturas:");
+		System.out.println("FACTURACIONES:");
 		for (Factura factura : facturas) {
 			factura.listarInfoFactura();
 			total += factura.getImporteTotal();
