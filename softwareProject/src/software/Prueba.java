@@ -34,10 +34,5 @@ public class Prueba {
 	empresa.setFacturas(facturas);
 	empresa.verDetalleFacturas();
 	
-	
-	
-	
 	}
-
-	
 }
