@@ -1,4 +1,7 @@
+=\=\=\=\=\=\=
 //org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+<<<<<<<=HEAD
+>>>>>>>=7a2424245a2356a49e13838891779ff8ee820720
 PLUGINS_NOT_ACTIVATED_ON_STARTUP=;org.eclipse.m2e.discovery;
 eclipse.preferences.version=1
 org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Consolas|12.0|0|GTK|1|;
@@ -26,4 +29,8 @@ org.eclipse.ui.workbench.ACTIVE_TAB_TEXT_COLOR=221,221,221
 org.eclipse.ui.workbench.INACTIVE_TAB_BG_END=49,53,56
 org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=59,64,66
 org.eclipse.ui.workbench.INACTIVE_TAB_TEXT_COLOR=187,187,187
+<<<<<<< HEAD
 terminal.views.view.font.definition=1|Consolas|12.0|0|GTK|1|;
+=======
+terminal.views.view.font.definition=1|Consolas|12.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+>>>>>>> origin

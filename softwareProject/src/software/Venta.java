@@ -54,8 +54,8 @@ public class Venta{
 	public void listarInfoVenta() {
 		System.out.println("FACTURA: #"+codigoFactura+"|"+ cliente.toString());
 		System.out.println("Productos:");
-		for (Recurso recursosVendidos : recursosVendidos) {
-			System.out.println("COD#"+recursosVendidos.getCodigo()+"| "+ recursosVendidos.getNombre()+" | Precio:"+recursosVendidos.getPrecioVenta());
+		for (Recurso recursoVendidos : recursosVendidos) {
+			System.out.println("COD#"+recursoVendidos.getCodigo()+"| "+ recursoVendidos.getNombre()+" | Precio:"+recursoVendidos.getPrecioVenta());
 		}
 		System.out.println("Importe total: "+getImporteTotalVenta());
 	}
