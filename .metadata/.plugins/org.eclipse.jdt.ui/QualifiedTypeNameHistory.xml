@@ -34,4 +34,16 @@
     <fullyQualifiedTypeName name="facturacion.Factura"/>
     <fullyQualifiedTypeName name="recursos.Software"/>
     <fullyQualifiedTypeName name="recursos.RecursoMultimedia"/>
+    <fullyQualifiedTypeName name="Produccion.MateriaPrima"/>
+    <fullyQualifiedTypeName name="Produccion.ManoDeObra"/>
+    <fullyQualifiedTypeName name="produccion.Producto"/>
+    <fullyQualifiedTypeName name="gastos.Gasto"/>
+    <fullyQualifiedTypeName name="gastos.GastoFabricacion"/>
+    <fullyQualifiedTypeName name="produccion.MateriaPrima"/>
+    <fullyQualifiedTypeName name="gastos.GastoTransporte"/>
+    <fullyQualifiedTypeName name="gastos.ManoDeObra"/>
+    <fullyQualifiedTypeName name="dataType.TipoTransporte"/>
+    <fullyQualifiedTypeName name="gastos.Persona"/>
+    <fullyQualifiedTypeName name="gastos.GastoComercializacion"/>
+    <fullyQualifiedTypeName name="dataType.TipoComercializacion"/>
 </qualifiedTypeNameHistroy>

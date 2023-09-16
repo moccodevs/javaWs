@@ -6,40 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
-<<<<<<< HEAD
-			<item value="/home/mcmng/Documentos/ws/javaWs/software"/>
-=======
-			<item value="D:\Documentos\ws\softwareProject"/>
->>>>>>> origin
-			<item value="D:\Descargas\lucas-allolio-e2"/>
-			<item value="D:\Documentos\ws\Cuenta"/>
+			<item value="/home/mcmng/Documentos/ws/javaWs/paint"/>
 		</list>
-	</section>
-	<section name="ExternalProjectImportWizard">
-		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
-		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="/home/mcmng/Documentos/ws/javaWs"/>
-		</list>
-		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
-			<item value=""/>
-		</list>
-	</section>
-	<section name="TaskPropertiesDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="544"/>
-		<item key="DIALOG_Y_ORIGIN" value="295"/>
-		<item key="DIALOG_WIDTH" value="839"/>
-		<item key="DIALOG_HEIGHT" value="341"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
-	</section>
-	<section name="SaveAsDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="657"/>
-		<item key="DIALOG_Y_ORIGIN" value="118"/>
-		<item key="DIALOG_WIDTH" value="613"/>
-		<item key="DIALOG_HEIGHT" value="607"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 </section>

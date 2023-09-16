@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 INDEX VERSION 1.134+/home/mcmng/Documentos/ws/javaWs/.metadata/.plugins/org.eclipse.jdt.core
-3458773234.index
-1819822848.index
-2847141498.index
 1865797976.index
-3814471854.index
-=======
-INDEX VERSION 1.134+D:\Documentos\ws\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-368197445.index
-1799773002.index
->>>>>>> origin
+646859275.index
+3596641610.index
+3363486116.index

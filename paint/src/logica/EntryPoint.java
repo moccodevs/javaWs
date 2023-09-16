@@ -12,7 +12,7 @@ public class EntryPoint {
 	
 		for (int i=0;i<value;i++) {
 			
-			ventana.pintarLinea(i,i+24,33,1000);
+			ventana.pintarLinea(i,i+24,33,10);
 			
 		}
 		System.out.println(ventana.countComponents());
